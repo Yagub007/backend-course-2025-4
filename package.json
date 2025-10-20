@@ -1,0 +1,21 @@
+{
+  "name": "backend-course-2025-4",
+  "version": "1.0.0",
+  "description": "HTTP-server using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js --input flights-1m.json --host 127.0.0.1 --port 3000",
+    "dev": "nodemon --exec node main.js -- --input flights-1m.json --host 127.0.0.1 --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yagub007/backend-course-2025-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yagub007/backend-course-2025-4/issues"
+  },
+  "homepage": "https://github.com/Yagub007/backend-course-2025-4#readme"
+}
