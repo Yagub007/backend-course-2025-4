@@ -11,7 +11,7 @@ program.configureOutput({
 });
 
 program
-  .option('-i, --input <file>', 'input file')
+  .requiredOption('-i, --input <file>', 'input file')
   .option('-o, --output <file>', 'output file')
   .option('-d, --display', 'display output to console')
   .option('-a, --airtime <number>', 'show only flights with AIR_TIME longer than value', parseFloat)
