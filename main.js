@@ -116,7 +116,9 @@ const server = http.createServer((req, res) => {
       ? parseFloat(fullUrl.searchParams.get('airtime_min'))
       : null;
 
-    const filtered = filterFlights(airtimeMin);
+    const MAX_RESULTS = 1000; 
+    const filtered = filterFlights(airtimeMin).slice(0, MAX_RESULTS);
+
     const xml = makeXml(filtered, dateFlag);
 
     res.writeHead(200, { 'Content-Type': 'application/xml; charset=utf-8' });
